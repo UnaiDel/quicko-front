@@ -13,19 +13,22 @@ export class AppComponent implements OnInit {
   showModeratorBoard = false;
   name?: string;
 
-  constructor(private tokenStorageService: TokenStorageService) { }
+  constructor(private tokenStorageService: TokenStorageService) { 
+  
+  }
 
   ngOnInit(): void {
+    
     this.isLoggedIn = !!this.tokenStorageService.getToken();
-
+    console.log(this.isLoggedIn);
     if (this.isLoggedIn) {
       const user = this.tokenStorageService.getUser();
       this.roles = user.roles;
-
+      this.name = user.name;
       this.showAdminBoard = this.roles.includes('ROLE_ADMIN');
       this.showModeratorBoard = this.roles.includes('ROLE_MODERATOR');
 
-      this.name = user.name;
+      
     }
   }
 
