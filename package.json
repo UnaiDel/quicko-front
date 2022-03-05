@@ -13,7 +13,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postintall": "ng build --aot --prod",
-    "heroku-postbuild": "ng build --pr  od"
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -36,16 +36,13 @@
     "express": "^4.17.2",
     "jquery": "^3.6.0",
     "ngx-bootstrap": "^7.1.2",
-    "primeng": "^11.4.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular/localize": "^11.0.2",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
-    "@types/request-promise": "^3.0.32",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
