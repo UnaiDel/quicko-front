@@ -1,6 +1,7 @@
 const path = require('path');
+const cors = require('cors');
 const express = require('express');
-const app = express();
+const app = express();app.use(cors());
 
 // Serve static files
 app.use(express.static(__dirname + '/dist/Quicko'));
