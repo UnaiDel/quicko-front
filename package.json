@@ -38,7 +38,8 @@
     "ngx-bootstrap": "^7.1.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "@angular/localize":"^9.1.0"
   },
   "devDependencies": {
     "@types/jasmine": "~3.6.0",
